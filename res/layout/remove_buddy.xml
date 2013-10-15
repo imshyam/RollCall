@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#CACACA">
+
+    <TableRow
+            android:id="@+id/tr1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Choose A Class :"
+                android:padding="10sp"
+                android:id="@+id/textView8"
+                android:layout_column="0"/>
+
+
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/tr2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spi1"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/spi1"
+                android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/tr3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    </TableRow>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    </TableRow>
+
+
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+    </TableRow>
+
+    <TableRow
+            android:id="@+id/tr6"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enter Enrollment No. :"
+                android:id="@+id/textView10"
+                android:layout_column="0"/>
+
+    </TableRow>
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_column="0">
+
+        <TableRow
+                android:id="@+id/tr8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText1"
+                    android:inputType="number"
+                    android:hint="Enrollment No. "
+                    />
+
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rmv"
+                    android:text="Remove"
+                    android:padding="10sp"
+                    android:layout_column="0"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textView11"
+                    android:layout_column="0"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+</TableLayout>

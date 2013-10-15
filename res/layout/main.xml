@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F3D5C"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"
+        android:text="Take Attendence" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Welcome To Roll Call"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="30dp"
+        android:text="Add Buddy" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="Student Details"
+        android:layout_below="@+id/button8"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="Remove Buddy"
+        android:layout_alignTop="@+id/button8"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="Edit Entries"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@drawable/button_image"
+        android:layout_below="@+id/button6"
+        android:layout_alignLeft="@+id/button10" />
+
+    <Button
+            android:id="@+id/button10"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="class Details"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignLeft="@+id/button4" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/textView"
+            android:textColor="#33cccc"
+            android:textSize="20dp"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/button1"/>
+
+
+</RelativeLayout>

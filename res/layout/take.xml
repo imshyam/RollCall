@@ -1,0 +1,74 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CACACA" >
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner111"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/rg1"
+        android:layout_below="@+id/spinner111"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Take Attendance By :"
+            android:id="@+id/textView"
+            android:layout_gravity="left|center_vertical" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enrollment No."
+            android:textSize="15sp"
+            android:padding="10sp"
+            android:id="@+id/rb1"
+            android:layout_marginLeft="140sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="15sp"
+            android:padding="10sp"
+            android:id="@+id/rb2"
+            android:layout_marginLeft="140sp"/>
+    </RadioGroup>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:textSize="30sp"
+            android:id="@+id/bGo"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:id="@+id/tv"
+            android:layout_below="@+id/bGo"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tid"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

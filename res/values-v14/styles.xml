@@ -1,0 +1,22 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+        <string-array name="classes">
+            <item>Class_1</item>
+            <item>Class_2</item>
+            <item>Class_3</item>
+            <item>Class_4</item>
+            <item>Class_5</item>
+            <item>Class_6</item>
+            <item>Class_7</item>
+            <item>Class_8</item>
+        </string-array>
+
+</resources>
