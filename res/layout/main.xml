@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1F3D5C"
+    android:background="#11a8f0"
     tools:context=".MainActivity" >
 
     <Button
@@ -64,7 +64,7 @@
         android:id="@+id/button7"
         android:layout_width="50sp"
         android:layout_height="50sp"
-        android:background="@drawable/button_image"
+        android:background="@drawable/picture"
         android:layout_below="@+id/button6"
         android:layout_alignLeft="@+id/button10" />
 
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:text="Date"
             android:id="@+id/textView"
-            android:textColor="#33cccc"
+            android:textColor="#ffffff"
             android:textSize="20dp"
             android:layout_below="@+id/textView1"
             android:layout_toRightOf="@+id/button1"/>

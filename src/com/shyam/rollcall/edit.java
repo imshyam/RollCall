@@ -13,10 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by shyamsundar on 8/22/13.
@@ -27,6 +24,7 @@ public class edit extends Activity {
     TextView tv;
     EditText et1,et2;
     database db;
+    Toast toast;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +35,7 @@ public class edit extends Activity {
         et2=(EditText)findViewById(R.id.editText2);
         db=new database(edit.this);
         b1=(Button)findViewById(R.id.button);
+        toast=Toast.makeText(getApplicationContext(),"",Toast.LENGTH_SHORT);
         loadSpinner();
     }
 
@@ -59,8 +58,26 @@ public class edit extends Activity {
                             String Name=et2.getText().toString();
                             boolean allDone=false;
                             try {
-                                if(TextUtils.isEmpty(Enr)||TextUtils.isEmpty(Name))
-                                    Toast.makeText(getApplicationContext(),"Please Fill All Portions",Toast.LENGTH_LONG).show();
+                                boolean EntryExists=false;
+                                db.open();
+                                List<String> list=db.getEnr1(str);
+                                db.close();
+                                final String[]array=list.toArray(new String[list.size()]);
+                                for(int i=0;i<list.size();i++) {
+                                    if(Enr.equals(array[i])){
+                                        EntryExists=true;
+                                        break;
+                                    }
+                                }
+                                if(TextUtils.isEmpty(Enr)||TextUtils.isEmpty(Name)){
+                                    toast.setText("Please Fill All Portions");
+                                    toast.show();
+                                }
+                                else if (EntryExists==false) {
+                                    // showToast("Please Enter Your Name");
+                                    toast.setText("No Such Enrollment No. Exists.");
+                                    toast.show();
+                                }
                                 else
                                 {
                                     db.open();

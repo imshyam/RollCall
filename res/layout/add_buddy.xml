@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_below="@+id/textView1"
-        android:layout_alignLeft="@+id/editText3"/>
+        android:layout_alignLeft="@+id/editText3"
+        android:imeOptions="actionGo"/>
 
     <TextView
         android:id="@+id/textView1"
@@ -45,7 +46,8 @@
         android:layout_below="@+id/textView3"
         android:layout_marginTop="14dp"
         android:ems="10"
-        android:inputType="number" >
+        android:inputType="number"
+        android:imeOptions="actionNext">
 
         <requestFocus />
     </EditText>

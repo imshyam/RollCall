@@ -15,10 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by shyamsundar on 8/13/13.
@@ -29,6 +26,7 @@ public class add_buddy extends Activity{
     TextView text;
     Button b1;
     EditText e1,e2;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +38,7 @@ public class add_buddy extends Activity{
         b1=(Button)findViewById(R.id.button);
         e1=(EditText)findViewById(R.id.editText3);
         e2=(EditText)findViewById(R.id.editText2);
+        toast=Toast.makeText(getApplicationContext(), "",Toast.LENGTH_SHORT);
 
         loadSpinner();
 
@@ -64,27 +63,55 @@ public class add_buddy extends Activity{
                         @Override
                         public void onClick(View view) {
 
-                            boolean itWorks=true;
+                            boolean itWorks=false;
                             try{
-
                                 String enr=e1.getText().toString();
                                 String name=e2.getText().toString();
-                                if (TextUtils.isEmpty(enr)||TextUtils.isEmpty(name)) {
+                                boolean repe=false;
+                                database repeat=new database(add_buddy.this);
+                                repeat.open();
+                                List<String>list=repeat.getEnr1(tablename);
+                                repeat.close();
+                                final String[]array=list.toArray(new String[list.size()]);
+                                for(int i=0;i<list.size();i++) {
+                                    if(enr.equals(array[i])){
+                                        repe=true;
+                                        break;
+                                    }
+                                }
+
+                                if (repe) {
                                     // showToast("Please Enter Your Name");
-                                    Toast.makeText(getApplicationContext(),"Please Fill All Parts",Toast.LENGTH_LONG).show();
+                                    toast.setText("Enrollment No. Already Exists.");
+                                    toast.show();
+                                }
+
+
+                                else if (TextUtils.isEmpty(enr)||TextUtils.isEmpty(name)) {
+                                    // showToast("Please Enter Your Name");
+                                    toast.setText("Please Fill All Parts");
+                                    toast.show();
                                     e1.requestFocus();
-                                    itWorks=false;
                                 }
                                 else if (TextUtils.isEmpty(tablename)) {
                                     // showToast("Please Enter Your Name");
-                                    Toast.makeText(getApplicationContext(),"Choose Proper Class",Toast.LENGTH_LONG).show();
+                                    toast.setText("Choose Proper Class");
+                                    toast.show();
                                     e1.requestFocus();
-                                    itWorks=false;}
+                                }
                                 else {
                                 database entry=new database(add_buddy.this);
                                 entry.open();
-                                        entry.createEntry(tablename, enr, name);
-                                entry.close();
+                                    List<String> list1 = entry.getEnr1(tablename);
+                                    boolean alreadyExists=true;
+
+                                    entry.createEntry(tablename, enr, name,"0");
+                                    entry.close();
+                                    dbAttendance create=new dbAttendance(add_buddy.this);
+                                    create.open();
+                                    create.createEntry1(tablename,enr);
+                                    create.close();
+                                    itWorks=true;
                                         }
 
                             }
@@ -94,7 +121,8 @@ public class add_buddy extends Activity{
                             }
                             finally {
                                 if(itWorks){
-                                    Toast.makeText(getApplicationContext(),"DONE",Toast.LENGTH_LONG).show();
+                                    toast.setText("done");
+                                    toast.show();
                                     e2.setText("");
                                     e1.requestFocus();
                                 }
@@ -115,22 +143,5 @@ public class add_buddy extends Activity{
 
 
     }
-
-
-
-
-    private void showToast(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
-    }
-
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
 
 }

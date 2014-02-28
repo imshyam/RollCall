@@ -13,6 +13,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
+
 /**
  * Created by shyamsundar on 8/13/13.
  */
@@ -23,6 +25,7 @@ public class remove_buddy extends Activity{
     TextView text1;
     Spinner spinner;
     database db;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +37,7 @@ public class remove_buddy extends Activity{
         spinner=(Spinner)findViewById(R.id.spi1);
         text1=(TextView)findViewById(R.id.textView11);
         db=new database(remove_buddy.this);
-
+        toast=Toast.makeText(getApplicationContext(),"",Toast.LENGTH_SHORT);
 
 
 
@@ -58,15 +61,34 @@ public class remove_buddy extends Activity{
                     @Override
                     public void onClick(View view) {
                         String enroll=e2.getText().toString();
-                        long enrNo=Long.parseLong(enroll);
                         boolean allDone=false;
                         try {
-                            if(TextUtils.isEmpty(enroll))
-                                Toast.makeText(getApplicationContext(),"Please Enter Enrollment No.",Toast.LENGTH_LONG).show();
+                            boolean EntryExists=false;
+                            db.open();
+                            List<String> list=db.getEnr1(str);
+                            db.close();
+                            final String[]array=list.toArray(new String[list.size()]);
+                            for(int i=0;i<list.size();i++) {
+                                if(e2.getText().toString().equals(array[i])){
+                                    EntryExists=true;
+                                    break;
+                                }
+                            }
+
+                            if(TextUtils.isEmpty(enroll)){
+                                toast.setText("Please Enter Enrollment No.");
+                                toast.show();
+                            }
+                            else if (EntryExists==false) {
+                                // showToast("Please Enter Your Name");
+                                toast.setText("No Such Enrollment No. Exists.");
+                                toast.show();
+                            }
                             else
                             {
 
                                 db.open();
+                                    long enrNo=Long.parseLong(enroll);
                                     db.deleteByEnr(str,enrNo);
                                 db.close();
                                 Toast.makeText(getApplicationContext(),"DONE",Toast.LENGTH_LONG).show();
@@ -103,12 +125,6 @@ public class remove_buddy extends Activity{
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
 }
 
 

@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Roll Call</string>
+    <string name="app_name">RollCall</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string-array name="spnarray">
-        <item>Class 1</item>
-        <item>Class 2</item>
-        <item>Class 3</item>
+	<string-array name="classes">
+        <item>Class_1</item>
+        <item>Class_2</item>
+        <item>Class_3</item>
+        <item>Class_4</item>
+        <item>Class_5</item>
+        <item>Class_6</item>
+        <item>Class_7</item>
+        <item>Class_8</item>
 
     </string-array>
 </resources>
