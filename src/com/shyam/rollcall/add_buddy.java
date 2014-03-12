@@ -1,3 +1,7 @@
+//adding name and enrollment no. of students to database named "database"
+//two methods
+//1.manually
+//2.syncing from google spreadsheet
 package com.shyam.rollcall;
 
 import android.app.Activity;
