@@ -1,3 +1,4 @@
+//database for saving names of students
 package com.shyam.rollcall;
 
 import android.content.ContentValues;
