@@ -1,3 +1,4 @@
+//for knowing the percent of attendance of any buddy
 package com.shyam.rollcall;
 
 import android.app.Activity;
