@@ -1,3 +1,4 @@
+//home page of application
 package com.shyam.rollcall;
 
 import android.app.AlertDialog;
