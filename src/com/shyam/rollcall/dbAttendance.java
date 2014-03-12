@@ -1,3 +1,4 @@
+//database for saving attendance
 package com.shyam.rollcall;
 
 import android.content.ContentValues;
