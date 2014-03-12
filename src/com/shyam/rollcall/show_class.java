@@ -1,3 +1,5 @@
+//Expandable ListView for showing students in any class
+//clicking on name will generate a toast with the name of student
 package com.shyam.rollcall;
 
 /**
