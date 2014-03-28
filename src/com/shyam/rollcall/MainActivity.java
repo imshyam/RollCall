@@ -1,29 +1,31 @@
-//home page of application
 package com.shyam.rollcall;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.app.Activity;
+import android.os.Environment;
 import android.text.TextUtils;
 import android.text.format.Time;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.sql.SQLException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class MainActivity extends Activity {
-    Button b1,b2,b3,b4,b5,b6,b7,b8;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,bex;
     TextView tv;
     SharedPreferences somedata;
 	public static String file="MyShPre";
@@ -43,6 +45,8 @@ public class MainActivity extends Activity {
         b7=(Button)findViewById(R.id.button10);
         b8=(Button)findViewById(R.id.button7);
         tv=(TextView)findViewById(R.id.textView);
+        bex=(Button)findViewById(R.id.buttonex);
+
         
         somedata=getSharedPreferences(file, MODE_PRIVATE);
 
@@ -99,6 +103,16 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 
                 MainActivity.this.showDialog(ALERT_DIALOG1);
+
+            }
+        });
+
+        bex.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent expo=new Intent(MainActivity.this,expor.class);
+                startActivity(expo);
 
             }
         });

@@ -1,5 +1,3 @@
-//for editing name of any buddy using his/her enrollment no.
-//if enrollment no. is wrong then you have to re-enter the entry
 package com.shyam.rollcall;
 
 import android.app.Activity;

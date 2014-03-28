@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="EclipseModuleManager">
+    <libelement value="file://$USER_HOME$/Downloads/opencsv-2.4.jar" />
+    <libelement value="file://$USER_HOME$/Downloads/ormlite-android-4.48.jar" />
     <conelement value="com.android.ide.eclipse.adt.DEPENDENCIES" />
-    <src_description expected_position="2">
+    <src_description expected_position="3">
       <src_folder value="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK" expected_position="0" />
       <src_folder value="com.android.ide.eclipse.adt.LIBRARIES" expected_position="1" />
-      <src_folder value="file://$MODULE_DIR$/src" expected_position="4" />
-      <src_folder value="file://$MODULE_DIR$/gen" expected_position="5" />
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="5" />
+      <src_folder value="file://$MODULE_DIR$/gen" expected_position="6" />
     </src_description>
   </component>
   <component name="FacetManager">
     <facet type="android" name="Android">
-      <configuration>
-        <proGuardCfgFiles>
-          <file>file://C:/Program Files/Java/jdk1.7.0_51/tools/proguard/proguard-android.txt</file>
-        </proGuardCfgFiles>
-      </configuration>
+      <configuration />
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
@@ -27,8 +25,19 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="library" exported="" name="gen" level="project" />
-    <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="com.android.ide.eclipse.adt.DEPENDENCIES" level="application" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../GSS_Client_Android/assets/lib/gss_lib_2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../GSS_Client_Android/assets/lib/gss_lib_2.2.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 

@@ -1,10 +1,10 @@
-//adding name and enrollment no. of students to database named "database"
-//two methods
-//1.manually
-//2.syncing from google spreadsheet
 package com.shyam.rollcall;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -28,7 +28,7 @@ public class add_buddy extends Activity{
 
     Spinner spinner;
     TextView text;
-    Button b1;
+    Button b1,b2;
     EditText e1,e2;
     Toast toast;
 
@@ -40,10 +40,26 @@ public class add_buddy extends Activity{
         text=(TextView)findViewById(R.id.tv);
         spinner=(Spinner)findViewById(R.id.spinner);
         b1=(Button)findViewById(R.id.button);
+        b2=(Button)findViewById(R.id.button2);
         e1=(EditText)findViewById(R.id.editText3);
         e2=(EditText)findViewById(R.id.editText2);
         toast=Toast.makeText(getApplicationContext(), "",Toast.LENGTH_SHORT);
-
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ConnectionDetector cd = new ConnectionDetector(getApplicationContext());
+                Boolean isInternetPresent = cd.isConnectingToInternet();
+                if(isInternetPresent){
+                Intent impo =new Intent(add_buddy.this,impor.class);
+                startActivity(impo);
+                }
+                else
+                {
+                    showAlertDialog(add_buddy.this, "No Internet Connection",
+                            "You don't have internet connection.", false);
+                }
+            }
+        });
         loadSpinner();
 
     }
@@ -61,6 +77,8 @@ public class add_buddy extends Activity{
                 public void onItemSelected(AdapterView<?> adapterView, View view, final int i, long l) {
                     final String tablename=spinner.getItemAtPosition(i).toString();
                     text.setText("To "+tablename);
+
+
 
 
                     b1.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +125,7 @@ public class add_buddy extends Activity{
                                 database entry=new database(add_buddy.this);
                                 entry.open();
                                     List<String> list1 = entry.getEnr1(tablename);
-                                    boolean alreadyExists=true;
+
 
                                     entry.createEntry(tablename, enr, name,"0");
                                     entry.close();
@@ -146,6 +164,28 @@ public class add_buddy extends Activity{
 
 
 
+    }
+
+    public void showAlertDialog(Context context, String title, String message, Boolean status) {
+        AlertDialog alertDialog = new AlertDialog.Builder(context).create();
+
+        // Setting Dialog Title
+        alertDialog.setTitle(title);
+
+        // Setting Dialog Message
+        alertDialog.setMessage(message);
+
+        // Setting alert dialog icon
+        alertDialog.setIcon(R.drawable.fail);
+
+        // Setting OK Button
+        alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+
+        // Showing Alert Message
+        alertDialog.show();
     }
 
 }

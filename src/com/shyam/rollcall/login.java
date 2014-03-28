@@ -1,4 +1,3 @@
-//for authentication
 package com.shyam.rollcall;
 
 import android.app.Activity;

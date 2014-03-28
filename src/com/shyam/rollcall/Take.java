@@ -1,4 +1,3 @@
-//for selecting wheather name or enrollemnt no. is appropriate for taking attendance
 package com.shyam.rollcall;
 
 import android.app.Activity;

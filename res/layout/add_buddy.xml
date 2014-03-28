@@ -22,32 +22,29 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="200dp"
         android:text="Enter Name :"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_below="@+id/editText3" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
          android:textSize="20sp"
-         android:layout_marginTop="100sp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Enter Enrollment No." />
+         android:text="Enter Enrollment No."
+         android:layout_below="@+id/button2" android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true" android:layout_marginTop="33dp"/>
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="14dp"
         android:ems="10"
         android:inputType="number"
-        android:imeOptions="actionNext">
+        android:imeOptions="actionNext"
+        android:layout_below="@+id/textView3" android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
         <requestFocus />
     </EditText>
@@ -65,8 +62,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinner"
-            android:layout_alignParentTop="true"
-            />
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
 
     <TextView
             android:layout_width="wrap_content"
@@ -75,5 +72,10 @@
             android:id="@+id/tv"
             android:layout_below="@+id/button"
             android:layout_alignLeft="@+id/button"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Import Details"
+            android:id="@+id/button2" android:layout_below="@+id/spinner" android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

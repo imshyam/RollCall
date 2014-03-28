@@ -1,4 +1,3 @@
-//for removing any buddy in any class
 package com.shyam.rollcall;
 
 import android.app.Activity;

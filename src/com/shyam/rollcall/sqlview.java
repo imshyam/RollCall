@@ -1,8 +1,3 @@
-//for showing a clean table layout for attendance
-//each table row will contain three items
-//1.id
-//2.name/enrollment no.
-//3.checkbox for making attendance
 package com.shyam.rollcall;
 
 import android.app.Activity;
@@ -213,9 +208,6 @@ if(id==0){
             }
         });
     }
-    
-    //dialog for confirmation
-    
     @Override
     @Deprecated
     protected Dialog onCreateDialog(int id) {
