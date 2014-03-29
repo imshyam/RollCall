@@ -117,14 +117,11 @@ public class remove_buddy extends Activity{
 
 
     }
-
-
-
-
-    private void showToast(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+    @Override
+    public void onPause() {
+        super.onPause();
+        toast.cancel();
     }
-
 }
 
 

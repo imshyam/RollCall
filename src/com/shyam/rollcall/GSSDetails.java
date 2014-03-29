@@ -27,8 +27,6 @@ import android.widget.AdapterView.OnItemClickListener;
 /**
  * Show list of WorkSheets
  *
- * @author Prasanta Paul
- *
  */
 public class GSSDetails extends Activity {
 

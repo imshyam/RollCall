@@ -137,6 +137,10 @@ public class WKDetails extends Activity {
                         }
                         if(repe==false)
                             db.createEntry(classname, enrDb, nameDb, "0");
+                        dbAttendance create=new dbAttendance(WKDetails.this);
+                        create.open();
+                        create.createEntry1(classname,enrDb);
+                        create.close();
                         db.close();
                     } catch (SQLException e) {
                         e.printStackTrace();
@@ -154,4 +158,5 @@ public class WKDetails extends Activity {
 
 		}
 	}
+
 }

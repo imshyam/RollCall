@@ -111,4 +111,9 @@ public class edit extends Activity {
 
 
     }
+    @Override
+    public void onPause() {
+        super.onPause();
+        toast.cancel();
+    }
 }

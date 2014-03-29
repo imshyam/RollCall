@@ -187,5 +187,11 @@ public class add_buddy extends Activity{
         // Showing Alert Message
         alertDialog.show();
     }
+    @Override
+    public void onPause() {
+        super.onPause();
+        toast.cancel();
+
+    }
 
 }

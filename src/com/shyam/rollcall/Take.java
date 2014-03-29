@@ -30,6 +30,7 @@ public class Take extends Activity  {
 
     Spinner spinner;
     database db;
+    Toast toast;
     ArrayAdapter<String> adapter;
     TextView text,tid;
     Button b1;
@@ -42,6 +43,9 @@ public class Take extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.take);
         final Intent intent = new Intent(Take.this, sqlview.class);
+
+        toast=Toast.makeText(getApplication(),"",Toast.LENGTH_SHORT);
+
         db = new database(Take.this);
         text=(TextView) findViewById(R.id.tv);
         tid=(TextView)findViewById(R.id.tid);
@@ -86,7 +90,8 @@ public class Take extends Activity  {
                     @Override
                     public void onClick(View view) {
                     if(TextUtils.isEmpty(tid.getText().toString()))
-                        Toast.makeText(getApplicationContext(),"Choose An Option.",Toast.LENGTH_SHORT).show();
+                    { toast.setText("Choose An Option.");
+                        toast.show();}
                     else {
                         intent.putExtra("pas", str);
                         startActivity(intent);}
@@ -104,6 +109,10 @@ public class Take extends Activity  {
 
 
     }
-
+    @Override
+    public void onPause() {
+        super.onPause();
+        toast.cancel();
+        }
 
 }

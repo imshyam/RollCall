@@ -149,4 +149,9 @@ public class show_class extends Activity {
         }
 
     }
+    @Override
+    public void onPause() {
+        super.onPause();
+        toast.cancel();
+    }
 }
