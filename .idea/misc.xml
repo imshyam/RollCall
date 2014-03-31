@@ -3,10 +3,7 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="EntryPointsManager">
-    <entry_points version="2.0" />
-  </component>
-  <component name="IdProvider" IDEtalkID="EA0CC69157EFD4FAC59C9FD189F7CE51" />
+  <component name="IdProvider" IDEtalkID="9CEFAE9896FE304B3C8EC47CFE473569" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -17,7 +14,7 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="Android API 19 Platform" project-jdk-type="Android SDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="RunManager">
@@ -117,6 +114,22 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

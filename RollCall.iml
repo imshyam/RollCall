@@ -22,26 +22,25 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="library" exported="" name="gen" level="project" />
     <orderEntry type="library" exported="" name="com.android.ide.eclipse.adt.DEPENDENCIES" level="application" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
-      <library>
+    <orderEntry type="module-library">
+      <library name="opencsv-2.4.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../GSS_Client_Android/assets/lib/gss_lib_2.2.jar!/" />
+          <root url="file://$USER_HOME$/Downloads/opencsv-2.4.jar" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/../GSS_Client_Android/assets/lib/gss_lib_2.2.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
+    <orderEntry type="module-library">
+      <library name="ormlite-android-4.48.jar">
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/Compressed/NavigationDrawer/libs/android-support-v4.jar!/" />
+          <root url="file://$USER_HOME$/Downloads/ormlite-android-4.48.jar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

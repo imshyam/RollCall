@@ -87,20 +87,7 @@
     <favorites_list name="RollCall" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ClassFragment.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/ClassFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21843003" vertical-offset="807" max-vertical-offset="2193">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-              <folding>
-                <element signature="e#4458#4466#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -204,9 +191,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,6 +298,9 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,19 +312,6 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/NavigationDrawer/libs/android-support-v4.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="FullScreen" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="04fb459d002d81c2" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -409,17 +383,23 @@
       <option name="trusted" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
       <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -450,23 +430,17 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -505,26 +479,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="RollCall" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
       <option name="BCName" value="" />
       <option name="IOSSimulatorSdkPath" value="" />
@@ -560,14 +514,14 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="false" name="RollCall" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="RollCall" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -578,8 +532,26 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RollCall" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="RollCall" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="false" name="ExportSqlitDbToCSV" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -660,11 +632,12 @@
       <workItem from="1396160121335" duration="18360000" />
       <workItem from="1396197596708" duration="8615000" />
       <workItem from="1396236391369" duration="4977000" />
+      <workItem from="1396260566302" duration="33000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129011000" />
+    <option name="totallyTimeSpent" value="129044000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -687,37 +660,37 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1379" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1379" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18504532" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19227858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23640484" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18504532" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32026145" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18504532" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52124184" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19227858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23640484" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32026145" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -834,11 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/ic_import.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/ic_action_download.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -911,14 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/show.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2669">
@@ -949,66 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.92" vertical-offset="0" max-vertical-offset="493">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/counter_bg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/list_item_bg_normal.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/list_selector.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/list_item_bg_pressed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/drawer_list_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.28" vertical-offset="191" max-vertical-offset="731">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/TakeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="1632">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/add_buddy.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="814" max-vertical-offset="1377">
@@ -1020,104 +920,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/ImportFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1683">
-          <caret line="53" column="62" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/AddFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5392491" vertical-offset="2081" max-vertical-offset="2669">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/EditFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="298" max-vertical-offset="2057">
-          <caret line="38" column="90" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1907#4123#0" expanded="true" />
-            <element signature="e#4104#4105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/RemoveFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="1989">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/NavDrawerItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="782">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/NavDrawerListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91099477" vertical-offset="2062" max-vertical-offset="5559">
-          <caret line="171" column="22" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/ExportFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49317408" vertical-offset="0" max-vertical-offset="586">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/AttendanceFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18771331" vertical-offset="519" max-vertical-offset="2737">
-          <caret line="46" column="90" selection-start-line="46" selection-start-column="90" selection-end-line="46" selection-end-column="90" />
-          <folding>
-            <element signature="e#2420#2667#0" expanded="true" />
-            <element signature="e#2640#2641#0" expanded="true" />
-            <element signature="e#3836#4977#0" expanded="true" />
-            <element signature="e#4942#4943#0" expanded="true" />
-            <element signature="e#5858#6179#0" expanded="true" />
-            <element signature="e#6152#6153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.98501873" vertical-offset="400" max-vertical-offset="986">
@@ -1126,14 +928,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/shyam/rollcall/ClassFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21843003" vertical-offset="807" max-vertical-offset="2193">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#4458#4466#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
