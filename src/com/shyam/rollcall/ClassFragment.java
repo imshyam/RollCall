@@ -50,7 +50,7 @@ public class ClassFragment extends android.app.Fragment {
                                         int groupPosition, long id) {
                 // Toast.makeText(getApplicationContext(),
                 // "Group Clicked " + listDataHeader.get(groupPosition),
-                // Toast.LENGTH_SHORT).show();
+
                 return false;
             }
         });
@@ -73,7 +73,7 @@ public class ClassFragment extends android.app.Fragment {
             public void onGroupCollapse(int groupPosition) {
                 // Toast.makeText(getApplicationContext(),
                 //       listDataHeader.get(groupPosition) + " Collapsed",
-                //     Toast.LENGTH_SHORT).show();
+
 
             }
         });
