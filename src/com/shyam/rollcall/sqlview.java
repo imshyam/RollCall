@@ -116,7 +116,7 @@ if(id==0){
                     View v = new View(this);
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.MATCH_PARENT);
                     v.setLayoutParams(params);
-                    v.setBackgroundColor(Color.parseColor("#CACACA"));
+                    v.setBackgroundColor(Color.parseColor("#00bfbf"));
                     ll.addView(v);
 
                 }
@@ -190,7 +190,7 @@ if(id==0){
             View v = new View(this);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.MATCH_PARENT);
             v.setLayoutParams(params);
-            v.setBackgroundColor(Color.parseColor("#CACACA"));
+            v.setBackgroundColor(Color.parseColor("#00BFBF"));
             ll.addView(v);
         }
     } catch (SQLException e) {
@@ -267,7 +267,23 @@ if(id==0){
                 return dialog;
     }
 
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle("Closing Activity")
+                .setMessage("Are you sure you want to close this activity?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
 
+                })
+                .setNegativeButton("No", null)
+                .show();
+    }
 
 }
 

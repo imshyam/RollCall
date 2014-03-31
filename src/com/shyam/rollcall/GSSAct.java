@@ -8,7 +8,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.*;
 import android.widget.AdapterView.OnItemClickListener;
@@ -25,7 +24,6 @@ public class GSSAct extends Activity {
 	ListView list;
     String classname;
     private ProgressDialog progress;
-    private Handler progressBarHandler = new Handler();
 	@Override
     public void onCreate(Bundle savedInstanceState) 
 	{

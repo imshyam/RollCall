@@ -30,21 +30,21 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../GSS_Client_Android/assets/lib/gss_lib_2.2.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/Compressed/NavigationDrawer/libs/android-support-v4.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/../GSS_Client_Android/assets/lib/gss_lib_2.2.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/Compressed/NavigationDrawer/libs/android-support-v4.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/gss_lib_2.2.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/libs/gss_lib_2.2.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>
