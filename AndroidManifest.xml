@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="14"
         android:targetSdkVersion="17" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -19,7 +19,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-        android:name="com.shyam.rollcall.login"
+        android:name=".login"
         android:label="@string/app_name" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -28,34 +28,8 @@
         </intent-filter>
     </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Main"
             android:label="@string/app_name" >
-
-        </activity>
-        <activity
-                android:name=".add_buddy"
-                android:label="@string/app_name" >
-
-        </activity>
-        <activity
-                android:name=".Take"
-                android:label="@string/app_name" >
-
-        </activity>
-
-        <activity
-                android:name=".remove_buddy"
-                android:label="@string/app_name" >
-
-        </activity>
-        <activity
-                android:name=".show"
-                android:label="@string/app_name" >
-
-        </activity>
-        <activity
-                android:name=".show_class"
-                android:label="@string/app_name" >
 
         </activity>
         <activity
@@ -63,20 +37,6 @@
                 android:label="@string/app_name" >
 
         </activity>
-        <activity
-                android:name=".edit"
-                android:label="@string/app_name" >
-
-        </activity>
-        <activity
-                android:name=".impor"
-                android:label="@string/app_name" >
-
-        </activity>
-        <activity
-                android:name=".expor"
-                android:label="@string/app_name"
-                />
         <activity android:name=".GSSAct"
                       android:label="@string/app_name"
                 />

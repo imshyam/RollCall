@@ -65,7 +65,7 @@ public class show_class extends Activity {
 
             @Override
             public void onGroupExpand(int groupPosition) {
-                
+
                 toast.setText(listDataHeader.get(groupPosition));
                 toast.show();
             }

@@ -18,4 +18,36 @@
     <string name="action_previous">Previous</string>
     <string name="action_next">Next</string>
     <string name="action_finish">Finish</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Take Attendance</item>
+        <item >Add</item>
+        <item >Import</item>
+        <item >Edit</item>
+        <item >Remove</item>
+        <item >Class Details</item>
+        <item >Presence Details</item>
+        <item >Export</item>
+
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_add</item>
+        <item>@drawable/ic_import</item>
+        <item>@drawable/ic_edit</item>
+        <item>@drawable/ic_remove</item>
+        <item>@drawable/ic_details</item>
+        <item>@drawable/ic_user</item>
+        <item>@drawable/ic_export</item>
+
+    </array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+
 </resources>

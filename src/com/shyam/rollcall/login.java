@@ -75,7 +75,7 @@ public class login extends Activity{
 						editor.putString("password",reenter.getText().toString());
 						editor.commit();
 						Toast.makeText(getApplicationContext(),"Done.",1).show();
-						Intent intent =new Intent(login.this,MainActivity.class);
+						Intent intent =new Intent(login.this,Main.class);
 		                startActivity(intent);
 					}
 					else
@@ -133,7 +133,7 @@ public class login extends Activity{
 									editor.putString("memory",null);
 									editor.commit();
 			            		}
-			            		Intent intent =new Intent(login.this,MainActivity.class);
+			            		Intent intent =new Intent(login.this,Main.class);
 				                startActivity(intent);
 			            	}
 			            	else

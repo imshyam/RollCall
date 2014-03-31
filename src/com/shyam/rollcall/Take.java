@@ -3,6 +3,7 @@ package com.shyam.rollcall;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,7 +27,7 @@ import static android.R.layout.simple_spinner_item;
 /**
  * Created by shyamsundar on 8/15/13.
  */
-public class Take extends Activity  {
+public class Take extends FragmentActivity {
 
     Spinner spinner;
     database db;
