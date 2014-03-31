@@ -39,11 +39,11 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/gss_lib_2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/assets/lib/gss_lib_2.2.b1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/libs/gss_lib_2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/assets/lib/gss_lib_2.2.b1.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
