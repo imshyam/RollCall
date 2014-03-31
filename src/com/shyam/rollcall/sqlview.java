@@ -33,6 +33,7 @@ public class sqlview extends Activity{
     TextView tv;
     Toast toast;
     String clas;
+    int i=0;//for checking whether data is saved or not
 
     private final static int ALERT_DIALOG1=1;
 
@@ -201,7 +202,13 @@ if(id==0){
             @Override
             public void onClick(View view) {
 
-                sqlview.this.showDialog(ALERT_DIALOG1);
+                if(i==0) {
+                    sqlview.this.showDialog(ALERT_DIALOG1);
+                }
+                else {
+                    toast.setText("Data Already Saved");
+                    toast.show();
+                }
 
 
 
@@ -243,6 +250,7 @@ if(id==0){
                                 } finally {
                                     toast.setText("Done");
                                     toast.show();
+                                    i++;
                                 }
                                 }
                             }
@@ -269,6 +277,7 @@ if(id==0){
 
     @Override
     public void onBackPressed() {
+        if(i==0){
         new AlertDialog.Builder(this)
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .setTitle("Closing Activity")
@@ -282,7 +291,8 @@ if(id==0){
 
                 })
                 .setNegativeButton("No", null)
-                .show();
+                .show();}
+        else finish();
     }
 
 }
