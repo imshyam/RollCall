@@ -6,13 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import android.widget.Toast;
@@ -22,10 +20,7 @@ import com.pras.WorkSheet;
 import com.pras.WorkSheetCell;
 import com.pras.WorkSheetRow;
 
-/**
- * @author Prasanta Paul
- *
- */
+
 public class WKDetails extends Activity {
 	
 	int wkID;
@@ -117,47 +112,49 @@ public class WKDetails extends Activity {
                     if(cell.getName().equalsIgnoreCase("name")){
                         nameDb=cell.getValue();
                     }
-                    else if(cell.getName().equalsIgnoreCase("enrollmentno.")){
-                        enrDb=cell.getValue();
-                    }
-                    database db=new database(WKDetails.this);
+                    if(cell.getName().equalsIgnoreCase("enrollmentno.")) {
+                        enrDb = cell.getValue();
+                        Log.i("fuck", enrDb);
 
-                    try {
-                        db.open();
-                        boolean repe=false;
-                        database repeat=new database(WKDetails.this);
-                        repeat.open();
-                        List<String> list=repeat.getEnr1(classname);
-                        repeat.close();
-                        final String[]array=list.toArray(new String[list.size()]);
-                        for(int k=0;k<list.size();k++) {
-                            if(enrDb.equals(array[k])){
-                                repe=true;
-                                break;
-                            }
-                        }
-                        if(repe==false)
-                            db.createEntry(classname, enrDb, nameDb, "0");
-                        dbAttendance create=new dbAttendance(WKDetails.this);
-                        create.open();
-                        create.createEntry1(classname,enrDb);
-                        create.close();
-                        db.close();
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
+                        database db = new database(WKDetails.this);
 
-				}
+try {
+        db.open();
+        boolean repe = false;
+        database repeat = new database(WKDetails.this);
+        repeat.open();
+        List<String> list = repeat.getEnr1(classname);
+        repeat.close();
+final String[] array = list.toArray(new String[list.size()]);
+        for (int k = 0; k < list.size(); k++) {
+        if (enrDb.equals(array[k])) {
+        repe = true;
+        break;
+        }
+        }
+        if (repe == false) {
+        db.createEntry(classname, enrDb, nameDb, "0");
+        dbAttendance create = new dbAttendance(WKDetails.this);
+        create.open();
+        create.createEntry1(classname, enrDb);
+        create.close();
+        db.close();
+        }
+        } catch (SQLException e) {
+        e.printStackTrace();
+        }
+        }
+        }
 
-                    Toast.makeText(getApplicationContext(),"Done Loading Database",Toast.LENGTH_SHORT);
-			}
+        Toast.makeText(getApplicationContext(), "Done Loading Database", Toast.LENGTH_SHORT);
+        }
 
-			tv.setVerticalScrollBarEnabled(true);
-            tv.setHorizontalScrollBarEnabled(true);
-			tv.setText(record);
-			setContentView(tv);
+        tv.setVerticalScrollBarEnabled(true);
+        tv.setHorizontalScrollBarEnabled(true);
+        tv.setText(record);
+        setContentView(tv);
 
-		}
-	}
+        }
+        }
 
-}
+        }
