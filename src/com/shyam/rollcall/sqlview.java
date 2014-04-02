@@ -136,7 +136,7 @@ if(id==0){
                     View v = new View(this);
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.MATCH_PARENT);
                     v.setLayoutParams(params);
-                    v.setBackgroundColor(Color.parseColor("#00bfbf"));
+                    v.setBackgroundColor(Color.parseColor("#848789"));
                     ll.addView(v);
 
                 }
@@ -210,7 +210,7 @@ if(id==0){
             View v = new View(this);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,TableRow.LayoutParams.MATCH_PARENT);
             v.setLayoutParams(params);
-            v.setBackgroundColor(Color.parseColor("#00BFBF"));
+            v.setBackgroundColor(Color.parseColor("848789"));
             ll.addView(v);
         }
     } catch (SQLException e) {

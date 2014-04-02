@@ -8,6 +8,7 @@ import java.util.List;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -34,6 +35,7 @@ public class WKDetails extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        getWindow().getDecorView().setBackgroundColor(Color.parseColor("#848789"));
 
 		Intent intent = getIntent();
 		wkID = intent.getIntExtra("wk_id", -1);

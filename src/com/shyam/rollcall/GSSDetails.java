@@ -4,6 +4,7 @@ package com.shyam.rollcall;
 import java.util.ArrayList;
 
 import android.app.ProgressDialog;
+import android.graphics.Color;
 import com.pras.SpreadSheet;
 //import com.pras.SpreadSheetFactory;
 import com.pras.SpreadSheetFactory;
@@ -40,6 +41,7 @@ public class GSSDetails extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        getWindow().getDecorView().setBackgroundColor(Color.parseColor("#848789"));
 
         progress = new ProgressDialog(this);
         Intent intent = getIntent();

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +30,7 @@ public class GSSAct extends Activity {
 	{
         super.onCreate(savedInstanceState);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        getWindow().getDecorView().setBackgroundColor(Color.parseColor("#848789"));
 
         Intent intent=getIntent();
         classname=intent.getStringExtra("class");
