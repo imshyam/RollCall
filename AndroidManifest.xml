@@ -34,18 +34,33 @@
         </activity>
         <activity
                 android:name=".sqlview"
-                android:label="@string/app_name" >
-
+                android:label="Take Attendance"
+                android:parentActivityName=".Main" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.shyam.RollCall.Main" />
         </activity>
         <activity android:name=".GSSAct"
-                      android:label="@string/app_name"
-                />
+                  android:label="SpreadSheets"
+                  android:parentActivityName=".Main" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.shyam.RollCall.Main" />
+        </activity>
         <activity android:name=".GSSDetails"
-                      android:label="@string/app_name"
-                />
+                  android:label="WorkSheets"
+                  android:parentActivityName=".GSSAct" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.shyam.RollCall.GssAct" />
+        </activity>
         <activity android:name=".WKDetails"
-                      android:label="@string/app_name"
-                />
+                  android:label="Worksheet Details"
+                  android:parentActivityName=".GSSDetails" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.shyam.RollCall.GssDetails" />
+        </activity>
 
     </application>
 

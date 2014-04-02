@@ -28,6 +28,8 @@ public class GSSAct extends Activity {
     public void onCreate(Bundle savedInstanceState) 
 	{
         super.onCreate(savedInstanceState);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         Intent intent=getIntent();
         classname=intent.getStringExtra("class");
         list = new ListView(this.getApplicationContext());

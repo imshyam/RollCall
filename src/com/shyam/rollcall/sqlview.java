@@ -41,6 +41,25 @@ public class sqlview extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sqlview);
+        /*if(i==0){
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle("Closing Activity")
+                    .setMessage("Are you sure you want to close this activity?")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                        }
+
+                    })
+                    .setNegativeButton("No", null)
+                    .show();
+        }
+
+        else*/
+            getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent intent=getIntent();
         String id1=intent.getStringExtra("id");
         clas=intent.getStringExtra("pas");
@@ -215,6 +234,10 @@ if(id==0){
             }
         });
     }
+
+
+
+    //------------------- dialog and on back pressed ----------------------
     @Override
     @Deprecated
     protected Dialog onCreateDialog(int id) {
@@ -280,8 +303,8 @@ if(id==0){
         if(i==0){
         new AlertDialog.Builder(this)
                 .setIcon(android.R.drawable.ic_dialog_alert)
-                .setTitle("Closing Activity")
-                .setMessage("Are you sure you want to close this activity?")
+                .setTitle("Close Without Saving")
+                .setMessage("Are you sure you want to close without saving Attendance?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener()
                 {
                     @Override

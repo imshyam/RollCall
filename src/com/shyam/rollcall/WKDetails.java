@@ -38,6 +38,7 @@ public class WKDetails extends Activity {
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
 		Intent intent = getIntent();
 		wkID = intent.getIntExtra("wk_id", -1);

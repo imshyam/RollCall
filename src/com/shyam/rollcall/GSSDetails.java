@@ -39,6 +39,8 @@ public class GSSDetails extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         progress = new ProgressDialog(this);
         Intent intent = getIntent();
         spID = intent.getIntExtra("sp_id", -1);
