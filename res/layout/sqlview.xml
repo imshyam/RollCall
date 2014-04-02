@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#848789">
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#848789">
@@ -12,12 +18,7 @@
                 android:gravity="center"
                 android:id="@+id/texV"
                 android:layout_column="0" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        android:textSize="30sp"
-        android:id="@+id/save"/>
+
 
    <ScrollView
        android:layout_height="match_parent"
@@ -25,10 +26,18 @@
 
        <TableLayout android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#CACACA"
+        android:background="#848789"
         android:id="@+id/tl">
+
         </TableLayout>
    </ScrollView>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="30sp"
+            android:id="@+id/save"/>
 
         </TableLayout>
-
+</ScrollView>
+    </RelativeLayout>
