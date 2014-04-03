@@ -12,6 +12,8 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import android.widget.Toast;
@@ -30,10 +32,12 @@ public class WKDetails extends Activity {
     private ProgressDialog progress;
 	String[] cols;
 	TextView tv;
+    Button b1;
     String nameDb,enrDb,classname;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+        setContentView(R.layout.wk_details);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getWindow().getDecorView().setBackgroundColor(Color.parseColor("#848789"));
 
@@ -47,8 +51,8 @@ public class WKDetails extends Activity {
 			return;
 		}
 		
-		tv = new TextView(this.getApplicationContext());
-		
+		tv =(TextView)findViewById(R.id.textView);
+		b1=(Button)findViewById(R.id.button);
 		new MyTask().execute(null);
 	}
 	
@@ -111,52 +115,64 @@ public class WKDetails extends Activity {
                     if(cell.getName().equalsIgnoreCase("name")||cell.getName().equalsIgnoreCase("enrollmentno.")){
 					    record.append(cell.getName() +" = "+ cell.getValue() +"\n");
                     }
-                    if(cell.getName().equalsIgnoreCase("name")){
-                        nameDb=cell.getValue();
+
                     }
-                    if(cell.getName().equalsIgnoreCase("enrollmentno.")) {
-                        enrDb = cell.getValue();
-                        Log.i("fuck", enrDb);
 
-                        database db = new database(WKDetails.this);
+          }
+      tv.setText(record);
+//----------------loading to database--------------
 
-try {
-        db.open();
-        boolean repe = false;
-        database repeat = new database(WKDetails.this);
-        repeat.open();
-        List<String> list = repeat.getEnr1(classname);
-        repeat.close();
-final String[] array = list.toArray(new String[list.size()]);
-        for (int k = 0; k < list.size(); k++) {
-        if (enrDb.equals(array[k])) {
-        repe = true;
-        break;
-        }
-        }
-        if (repe == false) {
-        db.createEntry(classname, enrDb, nameDb, "0");
-        dbAttendance create = new dbAttendance(WKDetails.this);
-        create.open();
-        create.createEntry1(classname, enrDb);
-        create.close();
-        db.close();
-        }
-        } catch (SQLException e) {
-        e.printStackTrace();
-        }
-        }
-        }
+            b1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    for(int i=0; i<rows.size(); i++){
+                        WorkSheetRow row = rows.get(i);
+                        ArrayList<WorkSheetCell> cells = row.getCells();
 
-        Toast.makeText(getApplicationContext(), "Done Loading Database", Toast.LENGTH_SHORT);
-        }
+                        for(int j=0; j<cells.size(); j++){
+                            WorkSheetCell cell = cells.get(j);
+                            if(cell.getName().equalsIgnoreCase("name")){
+                                nameDb=cell.getValue();
+                            }
+                            if(cell.getName().equalsIgnoreCase("enrollmentno.")) {
+                                enrDb = cell.getValue();
 
-        tv.setVerticalScrollBarEnabled(true);
-        tv.setHorizontalScrollBarEnabled(true);
-        tv.setText(record);
-        setContentView(tv);
+                                database db = new database(WKDetails.this);
 
-        }
-        }
+                                try {
+                                    db.open();
+                                    boolean repe = false;
+                                    database repeat = new database(WKDetails.this);
+                                    repeat.open();
+                                    List<String> list = repeat.getEnr1(classname);
+                                    repeat.close();
+                                    final String[] array = list.toArray(new String[list.size()]);
+                                    for (int k = 0; k < list.size(); k++) {
+                                        if (enrDb.equals(array[k])) {
+                                            repe = true;
+                                            break;
+                                        }
+                                    }
+                                    if (repe == false) {
+                                        db.createEntry(classname, enrDb, nameDb, "0");
+                                        dbAttendance create = new dbAttendance(WKDetails.this);
+                                        create.open();
+                                        create.createEntry1(classname, enrDb);
+                                        create.close();
+                                        db.close();
+                                    }
+                                } catch (SQLException e) {
+                                    e.printStackTrace();
+                                }finally {
+                                    Toast.makeText(getApplicationContext(), "Done Loading Database", Toast.LENGTH_SHORT);
+                                }
+                            }
+                        }
 
-        }
+                    }
+                }
+            });
+
+  }
+   }
+ }

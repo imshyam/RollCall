@@ -34,11 +34,7 @@
         </activity>
         <activity
                 android:name=".sqlview"
-                android:label="Take Attendance"
-                android:parentActivityName=".Main" >
-            <meta-data
-                    android:name="android.support.PARENT_ACTIVITY"
-                    android:value="com.shyam.RollCall.Main" />
+                android:label="Take Attendance">
         </activity>
         <activity android:name=".GSSAct"
                   android:label="SpreadSheets"

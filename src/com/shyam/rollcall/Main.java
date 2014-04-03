@@ -237,6 +237,9 @@ public class Main extends Activity {
             case R.id.action_changePass:
                 Main.this.showDialog(ALERT_DIALOG2);
                 return true;
+            case R.id.action_help:
+
+                return true;
             case R.id.action_about:
                 Main.this.showDialog(ALERT_DIALOG1);
                 return true;

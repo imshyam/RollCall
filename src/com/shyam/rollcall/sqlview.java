@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.support.v4.app.TaskStackBuilder;
 import android.text.TextUtils;
 import android.text.format.Time;
 import android.util.Log;
@@ -58,8 +60,8 @@ public class sqlview extends Activity{
                     .show();
         }
 
-        else*/
-            getActionBar().setDisplayHomeAsUpEnabled(true);
+        else
+            getActionBar().setDisplayHomeAsUpEnabled(true);*/
         Intent intent=getIntent();
         String id1=intent.getStringExtra("id");
         clas=intent.getStringExtra("pas");
@@ -232,9 +234,6 @@ if(id==0){
             }
         });
     }
-
-
-
     //------------------- dialog and on back pressed ----------------------
     @Override
     @Deprecated
