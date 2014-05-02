@@ -55,7 +55,7 @@ public class GSSDetails extends Activity {
         list = new ListView(this.getApplicationContext());
         tv = new TextView(this.getApplicationContext());
 
-        new MyTask().execute(null);
+        new MyTask().execute();
     }
 
     private class MyTask extends AsyncTask{

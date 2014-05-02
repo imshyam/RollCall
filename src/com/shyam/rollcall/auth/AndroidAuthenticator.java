@@ -25,10 +25,6 @@ import android.widget.Toast;
 import com.pras.auth.Authenticator;
 
 
-/**
- * @author Prasanta Paul
- *
- */
 public class AndroidAuthenticator implements Authenticator {
 
 	private final String TAG = "AndroidAuthenticator";

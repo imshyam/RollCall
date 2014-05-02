@@ -14,6 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Name"
+        android:textColorHint="#00bfff"
         android:layout_below="@+id/textView1"
         android:layout_alignLeft="@+id/editText3"
         android:imeOptions="actionGo"/>
@@ -42,6 +44,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        android:hint="Enrollment No."
+        android:textColorHint="#00bfff"
         android:imeOptions="actionNext"
         android:layout_below="@+id/textView3" android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">

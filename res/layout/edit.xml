@@ -35,6 +35,7 @@
         android:inputType="number"
         android:ems="10"
         android:hint="Enrollment No."
+        android:textColorHint="#00bfff"
         android:id="@+id/editText"
         android:layout_below="@+id/spinner"
         android:layout_alignParentLeft="true" />
@@ -45,6 +46,7 @@
         android:inputType="textPersonName"
         android:hint="Name"
         android:ems="10"
+        android:textColorHint="#00bfff"
         android:id="@+id/editText2"
         android:layout_below="@+id/editText"
         android:layout_alignParentLeft="true"

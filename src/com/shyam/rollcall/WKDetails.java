@@ -34,7 +34,8 @@ public class WKDetails extends Activity {
 	TextView tv;
     Button b1;
     String nameDb,enrDb,classname;
-	
+    Toast toast;
+
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.wk_details);
@@ -50,10 +51,11 @@ public class WKDetails extends Activity {
 			finish();
 			return;
 		}
-		
+
+        toast=Toast.makeText(getApplicationContext(),"",Toast.LENGTH_SHORT);
 		tv =(TextView)findViewById(R.id.textView);
 		b1=(Button)findViewById(R.id.button);
-		new MyTask().execute(null);
+		new MyTask().execute();
 	}
 	
 	private class MyTask extends AsyncTask{
@@ -164,7 +166,8 @@ public class WKDetails extends Activity {
                                 } catch (SQLException e) {
                                     e.printStackTrace();
                                 }finally {
-                                    Toast.makeText(getApplicationContext(), "Done Loading Database", Toast.LENGTH_SHORT);
+                                    toast.setText("Done Loading Database");
+                                    toast.show();
                                 }
                             }
                         }
@@ -175,4 +178,10 @@ public class WKDetails extends Activity {
 
   }
    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        toast.cancel();
+
+    }
  }

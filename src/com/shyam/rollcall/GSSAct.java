@@ -39,7 +39,7 @@ public class GSSAct extends Activity {
         tv = new TextView(this.getApplicationContext());
         progress = new ProgressDialog(this);
         // Init and Read SpreadSheet list from Google Server
-        new MyTask().execute(null);
+        new MyTask().execute();
     }
 	
 	private class MyTask extends AsyncTask{

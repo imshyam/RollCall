@@ -52,20 +52,7 @@
 
     </TableRow>
 
-    <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
 
-    </TableRow>
-
-
-
-    <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-
-    </TableRow>
 
     <TableRow
             android:id="@+id/tr6"
@@ -97,6 +84,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/editText1"
                     android:inputType="number"
+                    android:textColorHint="#00bfff"
                     android:hint="Enrollment No. "
                     />
 
