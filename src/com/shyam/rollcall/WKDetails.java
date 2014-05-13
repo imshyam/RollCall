@@ -32,8 +32,8 @@ public class WKDetails extends Activity {
     private ProgressDialog progress;
 	String[] cols;
 	TextView tv;
-    Button b1;
-    String nameDb,enrDb,classname;
+    Button b1,b2;
+    String nameDb,enrDb,classname,type;//zero if import ,one if export
     Toast toast;
 
 	public void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,7 @@ public class WKDetails extends Activity {
 		spID = intent.getIntExtra("sp_id", -1);
         progress = new ProgressDialog(this);
 		classname=intent.getStringExtra("class");
+        type=intent.getStringExtra("type");
 		if(wkID == -1 || spID == -1){
 			finish();
 			return;
@@ -55,6 +56,15 @@ public class WKDetails extends Activity {
         toast=Toast.makeText(getApplicationContext(),"",Toast.LENGTH_SHORT);
 		tv =(TextView)findViewById(R.id.textView);
 		b1=(Button)findViewById(R.id.button);
+        b2=(Button)findViewById(R.id.bUpdate);
+        if(type.equals("0")){
+            b1.setVisibility(View.VISIBLE);
+            b2.setVisibility(View.INVISIBLE);
+        }
+        else{
+            b2.setVisibility(View.VISIBLE);
+            b1.setVisibility(View.INVISIBLE);
+        }
 		new MyTask().execute();
 	}
 	

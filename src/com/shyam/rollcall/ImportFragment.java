@@ -52,6 +52,7 @@ public class ImportFragment extends android.app.Fragment {
                         if(isInternetPresent){
                             Intent shcla =new Intent(getActivity(),GSSAct.class);
                             shcla.putExtra("class",tablename);
+                            shcla.putExtra("type","0");
                             startActivity(shcla);
                         }
                         else

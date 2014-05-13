@@ -261,6 +261,7 @@ if(id==0){
                                     for (int i = 0; i < list.size(); i++) {
                                         String today = db.getToday(clas, Long.parseLong(array[i]));
                                         da.open();
+
                                         da.modifyAtten(clas, Long.parseLong(array[i]), Long.parseLong(today));
                                         da.close();
 

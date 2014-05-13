@@ -36,7 +36,7 @@ public class GSSDetails extends Activity {
     ArrayList<WorkSheet> workSheets;
     TextView tv;
     private ProgressDialog progress;
-    String classname;
+    String classname,type;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +47,7 @@ public class GSSDetails extends Activity {
         Intent intent = getIntent();
         spID = intent.getIntExtra("sp_id", -1);
         classname=intent.getStringExtra("class");
+        type=intent.getStringExtra("type");
         if(spID == -1){
             finish();
             return;
@@ -121,6 +122,7 @@ public class GSSDetails extends Activity {
                         i.putExtra("wk_id", position - 1);
                         i.putExtra("sp_id", spID);
                         i.putExtra("class",classname);
+                        i.putExtra("type",type);
                         startActivity(i);
                     }
                 });

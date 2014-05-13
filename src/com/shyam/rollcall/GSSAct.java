@@ -24,6 +24,7 @@ public class GSSAct extends Activity {
 	TextView tv;
 	ListView list;
     String classname;
+    String type;//zero if import one if export
     private ProgressDialog progress;
 	@Override
     public void onCreate(Bundle savedInstanceState) 
@@ -34,6 +35,7 @@ public class GSSAct extends Activity {
 
         Intent intent=getIntent();
         classname=intent.getStringExtra("class");
+        type=intent.getStringExtra("type");
         list = new ListView(this.getApplicationContext());
 
         tv = new TextView(this.getApplicationContext());
@@ -102,6 +104,7 @@ public class GSSAct extends Activity {
 						Intent i = new Intent(GSSAct.this, GSSDetails.class);
 						i.putExtra("sp_id", position - 1);
                         i.putExtra("class",classname);
+                        i.putExtra("type",type);
 						startActivity(i);
 					}
 		    	});

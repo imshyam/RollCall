@@ -133,6 +133,17 @@ public class dbAttendance {
         cv1.put(key_total,"0");
         return ourDatabase.insert(clas,null,cv1);
     }
+    //--------------------creating new column--------------------------------------
+    /*public void insertColumn(String column){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_MODULE, column);
+
+        // Inserting Row
+        db.insert(TABLE_NAME, null, values);
+        db.close(); // Closing database connection
+    }*/
     //adding attendance
     public void modifyAtten(String clas, long l, long l1) {
         ContentValues cvUp=new ContentValues();
