@@ -3,6 +3,7 @@ package com.shyam.rollcall;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import android.app.Activity;
@@ -35,6 +36,8 @@ public class WKDetails extends Activity {
     Button b1,b2;
     String nameDb,enrDb,classname,type;//zero if import ,one if export
     Toast toast;
+    WorkSheet wk;
+    SpreadSheet sp;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -88,8 +91,8 @@ public class WKDetails extends Activity {
 			SpreadSheetFactory factory = SpreadSheetFactory.getInstance();
 			// Read from local Cache
 			ArrayList<SpreadSheet> sps = factory.getAllSpreadSheets(false);
-			SpreadSheet sp = sps.get(spID);
-			WorkSheet wk = sp.getAllWorkSheets(false).get(wkID);
+			sp = sps.get(spID);
+			wk = sp.getAllWorkSheets(false).get(wkID);
 			cols = wk.getColumns();
 			rows = wk.getData(false);
 
@@ -183,6 +186,12 @@ public class WKDetails extends Activity {
                         }
 
                     }
+                }
+            });
+            b2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
                 }
             });
 
