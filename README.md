@@ -1,8 +1,8 @@
 #RollCall
-###Android App
+###About
 ___
->now manage attendance with android application 
->>also keep them synchronised with google-spreadsheets 
+- now manage attendance with android application 
+- also keep them synchronised with google-spreadsheets 
 
 ###Installation
 ___
@@ -11,7 +11,7 @@ ___
 ###Screenshots
 All screenshots can be found [`here`](https://github.com/iMshyam/RollCall/tree/master/screenshots)
 ###### Navigation Drawer
-![Concentric_Circles](https://github.com/iMshyam/RollCall/raw/master/screenshots/Screenshot_2015-02-02-20-55-15.png)
+![Navigation drawer](https://github.com/iMshyam/RollCall/raw/master/screenshots/Screenshot_2015-02-02-20-55-15.png)
 
 ###### Home
 ![Home Page](https://raw.githubusercontent.com/iMshyam/RollCall/master/screenshots/Screenshot_2015-02-02-20-55-10.png)
